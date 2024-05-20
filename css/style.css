@@ -1,1 +1,459 @@
+/* Стили для корзины */
+.cart-container {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 300px;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+	color: black;
+}
+
+.cart-container h2 {
+    margin-top: 0;
+}
+
+.cart-container .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-container .cart-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-container .cart-item .item-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.cart-container .cart-item .item-info .item-title {
+    font-size: 14px;
+    margin: 0;
+}
+
+.cart-container .cart-item .item-info .item-price {
+    font-size: 12px;
+    color: black;
+}
+
+.cart-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: slategray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-container button:hover {
+    background-color: #e14d4f;
+}
+
+/* Остальные стили для вашего сайта */
+a {
+ text-decoration: none;
+ }
+body {
+    background-image: url('/Kh/img/FON2.jpg'); /* Путь к вашему новому фоновому изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы оно занимало весь фон */
+    background-position: center; /* Центрирует изображение на фоне */
+    color: white; /* Цвет текста для контраста с фоном */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #2c2c2c; /* Цвет фона меню */
+}
+
+.navbar-brand {
+            font-size: 23px;
+            font-weight: bold;
+            color: aliceblue; /* Цвет текста */
+			 flex-grow: 999; /* Расширение элемента для центрирования */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+
+.navbar-icons {402e1d
+            font-size: 20px;
+            color: aliceblue; /* Цвет иконок */
+            display: flex;
+            justify-content: flex-end; /* Выравнивание по правому краю */
+            flex-grow: 1; /* Расширение контейнера для выравнивания */
+        }
+
+ .navbar-icons ion-icon {
+            margin-left: 10px; /* Расстояние между иконками */
+        }
+  
+
+ .block {
+    width: ; /* Ширина блока */
+    height: 7px; /* Висота блока */
+    background-color: aliceblue; /* Колір фону блока */
+    border: 20px solid #ccc; /* Межа блока */
+    margin: 5px; /* Відступ навколо блока */
+    padding: px; /* Внутрішній відступ блока */
+    float: left; /* Розташування блоків в ряд (зліва) */
+}
+/* Стилі для блока .block2 */
+.block2 {
+    width: 700px; /* Ширина блока */
+    height: 170px; /* Висота блока */
+    background-color: aliceblue /* Колір фону блока */
+    border: -px solid #ccc; /* Межа блока */
+    margin: 7px; /* Відступ навколо блока */
+    padding: 250px; /* Внутрішній відступ блока */
+    float: right; /* Розташування блоків в ряд (зліва) */
+	margin-top: 22px;
+}
+
+/* Стилі для блока .block4 */
+.block3 {
+    width: 40px; /* Ширина блока */
+    height: 500px; /* Висота блока */
+    background-color: -;/* Колір фона блока */
+    border: -px solid #ccc; /* Межа блока */
+    margin: 71px; /* Відступ навколо блока */
+    padding: 80px; /* Внутрішній відступ блока */
+    float: middle; /* Розташування блоків в ряду (зліва) */
+    margin-top: px; /* Задайте бажаний відступ зверху для другого блока */	
+}
+.block4 {
+    width: 1701px; /* Ширина блока */
+    height: 250px; /* Висота блока */
+    background-color: -;/* Колір фона блока */
+    border: -px solid #ccc; /* Межа блока */
+    margin: 7px; /* Відступ навколо блока */
+    padding: 80px; /* Внутрішній відступ блока */
+    float: middle; /* Розташування блоків в ряду (зліва) */
+    margin-top: px; /* Задайте бажаний відступ зверху для другого блока */	
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 10px; /* Регулируйте отступы по вашему усмотрению */
+}
+
+header ul li a {
+  display: block;
+  padding: 5px 11px; /* Регулируйте отступы внутри кнопки */
+  text-decoration: none;
+  background-color: #949494; /* Цвет фона кнопки */
+  border: 1px solid #ccc; /* Граница кнопки */
+  border-radius: 100px; /* Радиус закругления углов */
+  box-shadow: 11px 6px 8px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+  width: 100px; /* Ширина кнопки */
+  height: 20px; /* Высота кнопки */
+  color: aliceblue; /* Цвет текста кнопки */
+}
+
+header ul li a:hover {
+  background-color: darkorange; /* Цвет фона кнопки при наведении */
+}
+
+.slider{
+	width: 1100px;
+	height: 500px;
+	overflow: hidden;
+	border: 10px solid #fff;
+}
+
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-20%, -60%);
+}
+
+.navigation{
+	position:absolute;
+	bottom:16px;
+	left:50%;
+	transform: translateX(-50%);
+	display:flex;
+}
+
+.bar{
+	height: 8px;
+	width: 30px;
+	margin: 6px;
+	cursor: pointer;
+	background-color: aliceblue;
+	opacity: .7;
+	border-radius:10px;
+	transition:all .4s ease;
+}
+
+.bar:hover{
+	opacity:1;
+	transform:scale(1.1);
+}
+
+input[name="r"] {
+	position:absolute;
+	visibility:hidden;
+}
+
+.slides{
+	width:400%;
+	height:100;
+	display:flex;
+}
+
+.slide{
+	width:25%;
+	transition:all .6s ease;
+}
+
+.slide img{
+	width:100%;
+	height:100%; 
+}
+
+
+#r1:checked ~ .s1{
+	margin-left:-0%;
+}
+
+#r2:checked ~ .s1{
+	margin-left:-25%;
+}
+
+#r3:checked ~ .s1{
+	margin-left:-50%;
+}
+
+#r4:checked ~ .s1{
+	margin-left:-75%;
+}
+
+
+
+
+
+/*Товар*/
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку при необходимости */
+  justify-content: flex-start; /* Выравнивание по левой стороне */
+  gap: 10px; /* Расстояние между карточками */
+}
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+/* Размещаем скидку на товар относительно изображения */
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ff6633;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+}
+
+.card__price::after {
+  content: "₴";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 20px;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card__price--discount::before {
+  content: "Зі знижкою";
+  font-weight: 400;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.card__price--common {
+  font-weight: 400;
+  font-size: 20px;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.card__price--common::before {
+  content: "Звичайна";
+  font-weight: 400;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: aliceblue;
+}
+
+.card__title:hover {
+  color: #ff6633;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70c05b;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70c05b;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #ff6633;
+  background-color: #ff6633;
+  color: #fff;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* чтобы карточки не переносились на новую строку */
+}
+
+.card {
+    flex: 0 0 auto; /*чтобы карточки не изменяли свою ширину */
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info {
+    text-align: center;
+}
+
+.price {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
