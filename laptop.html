@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPElectro</title>
+      <link rel="icon" href="img/%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png">
+    <link rel="stylesheet" href="css/Pc.css">
+    <style>
+        /* Добавляем стили для модального окна корзины */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #333;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icons">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-icon name="cart-outline" id="cartIcon"></ion-icon>
+        </div>
+    </nav>
+    <div class="cards-container">
+        <!-- Карточка товара -->
+        <!-- Ваш текущий HTML код карточек товаров здесь -->
+        <!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+       src="img/laptop1.jpg"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-5%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">20 000</div>
+      <div class="card__price card__price--common">25 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+     Ноутбук Asus ROG Strix G17 G713PI-HX049
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+	<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="img/laptop2.jpg"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-6%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">11 000</div>
+      <div class="card__price card__price--common">15 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+    Ноутбук Lenovo IdeaPad Gaming 3 16ARH7
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+	<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="img/laptop3.jpg"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-8%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">38 000</div>
+      <div class="card__price card__price--common">42 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+    Ноутбук Lenovo IdeaPad Gaming 3 15ACH6
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+	<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="img/laptop4.jpg"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-11%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">77 000</div>
+      <div class="card__price card__price--common">80 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Ноутбук Acer Nitro 5 AN515-58
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+	<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="img/laptop6.jpg"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-10%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">55 000</div>
+      <div class="card__price card__price--common">65 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+     Ноутбук Gigabyte AORUS 15 9KF
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+	<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a href="#" class="card__image">
+      <img
+        src="img/laptop6.png"
+        alt="Apple IPhone 14 PRO Max Gold"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-10%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">55 000</div>
+      <div class="card__price card__price--common">67 000</div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+     Ноутбук Asus ROG Strix G17 G713PI-HX049
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В кошик</button>
+  </div>
+</div>
+
+	<!-- Карточка товара -->
+
+	<!-- Карточка товара -->
+    </div>
+
+    <!-- Модальное окно корзины -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cartItems">
+                <!-- Сюда будут добавляться выбранные товары -->
+            </div>
+            <div class="cart-buttons">
+                <button id="checkoutBtn">Оформити замовлення</button>
+                <button class="close">Закрити</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cartIcon = document.getElementById("cartIcon");
+        const cartModal = document.getElementById("cartModal");
+        const closeBtn = document.querySelector(".close");
+        const cartItems = document.getElementById("cartItems");
+
+        // При нажатии на иконку корзины, показывать модальное окно корзины
+        cartIcon.addEventListener("click", function() {
+            cartModal.style.display = "block";
+        });
+
+        // При нажатии на кнопку "Закрыть", скрывать модальное окно корзины
+        const closeButtons = document.querySelectorAll(".close");
+        closeButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                cartModal.style.display = "none";
+            });
+        });
+
+        // Добавление товара в корзину
+        const addToCartButtons = document.querySelectorAll(".card__add");
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const card = button.closest(".card");
+                const title = card.querySelector(".card__title").textContent;
+                const price = card.querySelector(".card__price--common").textContent;
+                const item = document.createElement("div");
+                item.textContent = title + " - " + price;
+                cartItems.appendChild(item);
+            });
+        });
+
+        // Оформление заказа
+        const checkoutBtn = document.getElementById("checkoutBtn");
+        checkoutBtn.addEventListener("click", function() {
+            // Добавьте здесь код для оформления заказа
+            alert("Заказ успешно оформлен!");
+            // Очистка корзины после оформления заказа (если нужно)
+            cartItems.innerHTML = "";
+            // Закрытие модального окна корзины после оформления заказа (если нужно)
+            cartModal.style.display = "none";
+        });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
