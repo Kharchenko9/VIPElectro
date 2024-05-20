@@ -63,7 +63,7 @@ a {
  text-decoration: none;
  }
 body {
-    background-image: url('/Kh/img/FON2.jpg'); /* Путь к вашему новому фоновому изображению */
+    background-image: url('img/FON2.jpg'); /* Путь к вашему новому фоновому изображению */
     background-size: cover; /* Масштабирует изображение, чтобы оно занимало весь фон */
     background-position: center; /* Центрирует изображение на фоне */
     color: white; /* Цвет текста для контраста с фоном */
