@@ -11,13 +11,23 @@
     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.1.2/dist/css/ionicons.min.css">
 </head>
 <body>
-	  <style>
+  <style>
 	body {
     background-image: url('img/FON2.jpg'); /* Путь к вашему новому фоновому изображению */
     background-size: cover; /* Масштабирует изображение, чтобы оно занимало весь фон */
     background-position: center; /* Центрирует изображение на фоне */
     color: white; /* Цвет текста для контраста с фоном */
 }
+	   a {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+        }
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+        }
     </style>
 <!-- Меню сайта -->
 <div class="block1"> <!-- Блок меню -->
@@ -27,7 +37,7 @@
 
     <!-- Іконки праворуч -->
     <div class="navbar-icons">
-        <ion-icon name="person-outline"></ion-icon>
+    <a href = "Personal.html"><ion-icon name="person-outline"></ion-icon></a>
         <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
     </div>    
     </nav>    
