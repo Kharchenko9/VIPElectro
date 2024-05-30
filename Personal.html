@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: forestgreen;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}б
+
+.btn:hover {
+    opacity: 1;
+}
+
+#message {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+}
+
+#link-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#link-container li {
+    list-style: none; /* Remove bullets from the list */
+}
+
+#link-container a {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#link-container a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<form id="registrationForm" style="max-width:500px;margin:auto">
+  <h2>Регистрация</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Имя пользователя" name="usrnm" required>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email" required>
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Пароль" name="psw" required>
+  </div>
+
+  <button type="submit" id="registerBtn" class="btn">Реєстрація</button>
+  <button type="submit" id="signInBtn" class="btn">Увійти</button>
+</form>
+
+<div id="message" style="display:none;"></div>
+<div id="link-container" style="display:none;">
+  <li><a href="index.html">Головна сторінка</a></li>
+</div>
+
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+    // Определяем, какая кнопка была нажата
+    const registerBtn = document.getElementById('registerBtn');
+    const signInBtn = document.getElementById('signInBtn');
+    let message = '';
+    
+    if (event.submitter === registerBtn) {
+        message = 'Ви успішно зареєструвалися';
+    } else if (event.submitter === signInBtn) {
+        message = 'Ви успішно увійшли';
+    }
+
+    // Скрываем форму
+    this.style.display = 'none';
+    
+    // Показываем сообщение
+    const messageDiv = document.getElementById('message');
+    messageDiv.innerText = message;
+    messageDiv.style.display = 'block';
+    
+    // Показываем контейнер с ссылкой
+    document.getElementById('link-container').style.display = 'block';
+});
+</script>
+
+</body>
+
+</html>
